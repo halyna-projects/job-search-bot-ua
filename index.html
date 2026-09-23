@@ -804,21 +804,24 @@
   if (!demo) return;
 
   var script = [
-    { sender: 'user', text: 'ai, sql' },
-    { sender: 'bot', text: 'Шукаю за словами: ai, sql по всій Данії ...' },
-    { sender: 'bot', text: 'Знайдено 12. 1. Data Analyst – Ørsted\nØrsted | København | Jobindex\nКлючове слово: sql\nВідповідність: 78% — кандидат має підтверджений досвід роботи з SQL та звітністю, що добре збігається з вимогами вакансії.' },
+    { sender: 'user', text: 'bogholder' },
+    { sender: 'bot', text: 'Шукаю за словами: bogholder по всій Данії ...' },
+    { sender: 'bot', text: 'Знайшов 6. 1. Erfarne bogholdere, regnskabsmedarbejdere og regnskabsansvarlige søges\nProSelection | Aarhus C / Aarhus | Jobnet\nКлючові слова: bogholder\nЗбіг: 95% — Досвід кандидата повністю покриває широкий спектр стандартних бухгалтерських завдань, таких як загальний бухоблік, робота з кредиторами/дебіторами, ПДВ та звірка рахунків.' },
     { sender: 'user', text: '1' },
-    { sender: 'bot', text: 'Пишу ansøgning до №1 «Data Analyst»...\n\nKære Ørsted,\n\nMed erfaring inden for SQL, rapportering og datakvalitet så jeg jeres stillingsopslag med stor interesse...' },
+    { sender: 'bot', text: 'Пишу ansøgning до №1 «Erfarne bogholdere»...\n\nKære ProSelection,\n\nMed 6 års erfaring som bogholder, hvor jeg dagligt arbejder med bogføring, moms og afstemninger, fangede jeres stillingsopslag i Aarhus straks min interesse...' },
     { sender: 'bot', files: [
-      { name: 'ansogning_Data_Analyst.pdf', caption: 'Ansøgning у PDF — можна зберегти і роздрукувати.' },
-      { name: 'ansogning_UA_Data_Analyst.txt', caption: 'Переклад ansøgning українською — для перевірки.' },
-      { name: 'vakansiya_Data_Analyst.pdf', caption: 'Вакансія у PDF — з контактними даними зверху.' }
+      { name: 'ansogning_Erfarne_bogholdere.pdf', caption: 'Ansøgning у PDF — можна зберегти і роздрукувати.' },
+      { name: 'cv_Erfarne_bogholdere.pdf', caption: 'Готове CV з профілем під цю вакансію — можна подавати як є.' },
+      { name: 'ansogning_UA_Erfarne_bogholdere.txt', caption: 'Переклад ansøgning українською — для перевірки.' },
+      { name: 'vakansiya_Erfarne_bogholdere.pdf', caption: 'Вакансія у PDF — з контактними даними зверху.' }
     ] },
+    { sender: 'user', text: 'maler' },
+    { sender: 'bot', text: '1. Bygningsmaler\nTKP BYG A/S | Brabrand / Aarhus | Jobnet\nКлючові слова: maler\nЗбіг: 0% — Кандидат має досвід у бухгалтерському обліку, тоді як вакансія вимагає зовсім іншої спеціалізації та кваліфікації будівельного маляра.' },
     { sender: 'user', text: '➕ Додати вакансію вручну' },
     { sender: 'bot', text: 'Надішліть посилання на вакансію, PDF-файл або фото/скріншот оголошення.' },
-    { sender: 'user', text: 'careers.example.com/.../senior-manager-analytics' },
+    { sender: 'user', text: 'jobnet.dk/job/.../advokatbogholder' },
     { sender: 'bot', text: 'Отримую оголошення...' },
-    { sender: 'bot', text: '13. Senior Manager, Analytics\nДодано вручну\nВідповідність: 0% — кандидат має досвід виконавської аналітичної роботи, тоді як посада Senior Manager вимагає значного досвіду управління командою та стратегічного розвитку.' },
+    { sender: 'bot', text: '7. Advokatbogholder\nRANDSTAD A/S | Skødstrup / Aarhus | Jobnet\nДодано вручну\nЗбіг: 25% — Кандидат має сильну базову бухгалтерську кваліфікацію, проте у вакансії вимагається спеціалізований досвід адвокатського секретаря, управлінської звітности та юридичних процесів, якого немає в резюме.' },
     { sender: 'user', text: 'абракадабра' },
     { sender: 'bot', text: '🤖 Слово «абракадабра» — це магічне слово і безглуздий текст без жодного зв\'язку з ринком праці, тож я не можу запропонувати фаховий варіант чи виконати пошук.' }
   ];
